@@ -7,6 +7,8 @@ class RealEstateSchema extends Schema {
   up () {
     this.create('real_estates', (table) => {
       table.increments()
+      table.string('name')
+      table.text('address')
       table.timestamps()
     })
   }
